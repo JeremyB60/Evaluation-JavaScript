@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: raleway;
+    text-align: center;
+    background-color: #1e2530;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: reveil;
+    src: url(../fonts/Date\ Stamp.otf);
+}
+
+img {
+    background-color: #374357;
+    border-radius: 50%;
+    width: 50px;
+    padding: 20px;
+    border: 3px outset #ff0037;
+}
+
+.test {
+    width: auto;
+}
+
+.test:hover img {
+    box-shadow: inset 100px 100px 0px #cf022e;
+    transition: 2s;
+    border: 3px outset #ababab;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.9rem;
+    border-bottom: 3px outset #ff0037;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ababab;
+    padding: 20px;
+    background-color: #1e2530;
+    height: 10vh;
+}
+
+li:hover {
+    background-color: #0c0f15;
+    transition: 1.5s;
+    color: #ff0037;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+/*----------------- MAIN -----------------*/
+
+h1 {
+    margin-top: 50px;
+    color: #cf022e;
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+/*----------------- DATE & HEURE -----------------*/
+
+.dateHeure {
+    color: #ababab;
+    font-size: 2em;
+}
+
+/*----------------- GAUCHE DROITE -----------------*/
+
+.exoPlacement {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.left {
+    animation: parution 2s forwards;
+}
+
+@keyframes parution {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    60% {
+        transform: rotate(720deg);
+        box-shadow: 0 0 100px 50px #770000;
+    }
+
+}
+
+.right {
+    animation: parution2 2s forwards;
+    font-size: 1.5em;
+    color: #ff0037;
+    background-color: transparent;
+}
+
+@keyframes parution2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    30% {
+        transform: rotate(20deg);
+    }
+
+    60% {
+        transform: rotate(-20deg);
+    }
+}
+
+/*----------------- BULLES -----------------*/
+
+.bulle {
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.2;
+    filter: hue-rotate(0);
+    animation: bubulle 5s forwards;
+    cursor: crosshair;
+}
+
+/*CORRECTION AJOUT BOULE + JAVASCRIPT
+.ajoute {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}*/
+
+@keyframes bubulle {
+    to {
+        top: -300px;
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
+}
+
+.faireBulle,
+.grossir,
+.reduire {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #770000;
+    background-color: #ababab;
+    border: 1px solid #770000;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0 5px #a70024;
+    font-weight: bold;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.faireBulle:hover,
+.grossir:hover,
+.reduire:hover {
+    background-color: black;
+    color: #cf022e;
+}
+
+.faireBulle:active,
+.grossir:active,
+.reduire:active {
+    background-color: #770000;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+
+.demonstration {
+    font-size: 1.5em;
+    color: #ff0037;
+}
+
+
+
+@media screen and (max-width:950px) {
+    .menu {
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
+
+    .menu li {
+        height: 30px;
+    }
+
+    a {
+        width: 50%;
+    }
+
+    img {
+        width: 30px;
+        position: absolute;
+        left: 50%;   
+        top: 50%;     
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .exoPlacement {
+        display: block;
+        margin: 0;
+    }
+
+    .left {
+        left: 50px;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .dateHeure {
+        margin-bottom: 50px;
+    }
+    
+    .faireBulle {
+        margin-top: 150px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/calculatrice.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <a href="./calculatrice.html">
+                <li class="gauche">Calculatrice</li>
+            </a>
+            <a href="./devises.html">
+                <li class="droite">Convertisseur <br>de devises</li>
+            </a>
+            <a href="./index.html" class="test"><img src="./assets/images/home.svg" alt=""></a>
+            <a href="./facturation.html">
+                <li class="gauche">Facturation</li>
+            </a>
+            <a href="./animations.html">
+                <li class="droite">Animations</li>
+            </a>
+        </ul>
+    </header>
+    <main>
+        <h1>Calculatrice</h1>
+        <div id="calculatrice">
+            <div class="cadran">0</div>
+            <div class="annule"><button class="foncer" onclick="effacer()">C</button></div>
+            <div class="pourcentage"><button onclick="pourcentage()">%</button></div>
+            <div class="division"><button onclick="afficher('/')">/</button></div>
+            <div class="sept"><button onclick="afficher('7')">7</button></div>
+            <div class="huit"><button onclick="afficher('8')">8</button></div>
+            <div class="neuf"><button onclick="afficher('9')">9</button></div>
+            <div class="multiplication"><button onclick="afficher('*')">*</button></div>
+            <div class="quatre"><button onclick="afficher('4')">4</button></div>
+            <div class="cinq"><button onclick="afficher('5')">5</button></div>
+            <div class="six"><button onclick="afficher('6')">6</button></div>
+            <div class="moins"><button onclick="afficher('-')">-</button></div>
+            <div class="un"><button onclick="afficher('1')">1</button></div>
+            <div class="deux"><button onclick="afficher('2')">2</button></div>
+            <div class="trois"><button onclick="afficher('3')">3</button></div>
+            <div class="plus"><button onclick="afficher('+')">+</button></div>
+            <div class="zero"><button onclick="afficher('0')">0</button></div>
+            <div class="virgule"><button onclick="afficher('.')">.</button></div>
+            <div class="egal"><button class="foncer" onclick="resoudre()">=</button></div>
+        </div>
+    </main>
+    <script src="./assets/js/calculatrice.js"></script>
+</body>
+
+</html>
