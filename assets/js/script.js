@@ -1,6 +1,6 @@
 const titre = document.querySelector('.titre');
-const titre2 = 'Eval. JavaScript';
-const welcome = 'Bienvenue';
+const titre2 = 'Bienvenue';
+const welcome = 'Welcome';
 titre.addEventListener('mouseenter', () => {
     titre.innerHTML = welcome;
     titre.style.color = '#cf022e';
