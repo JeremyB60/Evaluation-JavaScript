@@ -1,155 +1,125 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: raleway;
-    background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: raleway;
+  background-color: black;
 }
 
 @font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto-Regular.ttf);
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: reveil;
-    src: url(../fonts/Date\ Stamp.otf);
+  font-family: reveil;
+  src: url(../fonts/Date\ Stamp.otf);
 }
 
 @font-face {
-    font-family: raleway;
-    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+  font-family: raleway;
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    background: linear-gradient(#1e2530, #050b18);
-    border-bottom: 5px solid #ff0037;
-    color: #cf022e;
-    font-size: 4em;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: linear-gradient(#1e2530, #050b18);
+  border-bottom: 5px solid #ff0037;
+  color: #cf022e;
+  font-size: 3em;
+  text-align: center;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .menu li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px outset #ff0037;
-    color: #ababab;
-    padding: 20px 0;
-    background-color: #1e2530;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px outset #ff0037;
+  color: #ababab;
+  padding: 20px 0;
+  background-color: #1e2530;
+  text-align: center;
 }
 
 li:hover {
-    background-color: #0c0f15;
-    transition: 0.5s;
-    color: #ff0037;
+  background-color: #0c0f15;
+  transition: 0.5s;
+  color: #ff0037;
 }
 
 a {
-    text-decoration: none;
-    width: 100%;
+  text-decoration: none;
+  width: 100%;
 }
 
 .droite {
-    animation: parution 1s ease-out;
+  animation: parution 1s ease-out;
 }
 
 @keyframes parution {
-    from {
-        transform: translateX(100%);
-    }
+  from {
+    transform: translateX(100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .gauche {
-    animation: parution2 1s ease-out;
+  animation: parution2 1s ease-out;
 }
 
 @keyframes parution2 {
-    from {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(-100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 #affichedate {
-    color: #cf022e;
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 1px 1px 2px red;
-    margin: auto;
-    font-family: reveil;
-    padding: 50px 0;
-    background-color: #050b18;
+  color: #cf022e;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px red;
+  margin: auto;
+  font-family: reveil;
+  padding: 50px 0;
+  background-color: #050b18;
 }
 
 .pieddepage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 80px;
-    width: 100%;
-    color: #cf022e;
-    background: linear-gradient(#111824, #050b18);
-    border-top: 2px inset rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  color: #cf022e;
+  background: linear-gradient(#111824, #050b18);
+  border-top: 2px inset rgb(255, 0, 0);
 }
 
-@media screen and (max-width:740px) {
-    li {
-        height: 75px;
-    }
+@media screen and (max-width: 740px) {
+  h1 {
+    font-size: 2em;
+  }
 
-    h1 {
-        font-size: 3em;
-        background: linear-gradient(#770000, black);
-        border-bottom: 5px solid orangered;
-        color: #f35c24;
-    }
-
-    .menu {
-        font-size: 2rem;
-    }
-
-    .menu li {
-        border-bottom: 3px outset orangered;
-        color: orange;
-        background-color: black;
-
-    }
-
-    li:hover {
-        background-color: #772000;
-    }
-
-    #affichedate {
-        color: #610707;
-        text-shadow: 1px 1px 2px red;
-        background-color: #000;
-    }
-
-    .pieddepage {
-        color: orange;
-        background: linear-gradient(#610707, black);
-        border-top: 2px inset rgb(255, 0, 0);
-    }
+  .menu {
+    font-size: 1.5rem;
+  }
 }

@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/devises.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/devises.css" />
     <title>Convertisseurs de devises</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <ul class="menu">
-            <a href="./calculatrice.html">
-                <li class="gauche">Calculatrice</li>
-            </a>
-            <a href="./devises.html">
-                <li class="droite">Convertisseur <br>de devises</li>
-            </a>
-            <a href="./index.html" class="test"><img src="./assets/images/home.svg" alt=""></a>
-            <a href="./facturation.html">
-                <li class="gauche">Facturation</li>
-            </a>
-            <a href="./animations.html">
-                <li class="droite">Animations</li>
-            </a>
-        </ul>
+      <ul class="menu">
+        <a href="./calculatrice.html">
+          <li class="gauche">Calculatrice</li>
+        </a>
+        <a href="./devises.html">
+          <li class="droite">Convertisseur <br />de&nbsp;devises</li>
+        </a>
+        <a href="./index.html" class="test"
+          ><img src="./assets/images/home.svg" alt=""
+        /></a>
+        <a href="./facturation.html">
+          <li class="gauche">Facturation</li>
+        </a>
+        <a href="./animations.html">
+          <li class="droite">Animations</li>
+        </a>
+      </ul>
     </header>
     <main>
-        <h1>Convertisseurs de devises</h1>
-        <h2>Version 1</h2>
-        <input type="number" class="montant1" onfocus="this.value=''" autofocus>
-        <select type="checkbox" id="devise1">
-            <option value="euro">Euro</option>
-            <option value="dollar">Dollar</option>
-            <option value="livre">Livre</option>
-            <option value="yen">Yen</option>
-        </select>
-        <button class="altern" onclick="alterner()">&lt;=&gt;</button>
-        <input type="number" class="montant2" readonly>
-        <select type="checkbox" id="devise2">
-            <option value="euro">Euro</option>
-            <option value="dollar" selected>Dollar</option>
-            <option value="livre">Livre</option>
-            <option value="yen">Yen</option>
-        </select><br>
-        <button id="convertisseur">Convertir</button>
-        <button onclick="effacer1()">Effacer</button><br>
-        <h2>Version 2</h2>
-        <label>Euro </label><input id="euro" type="text" placeholder="- €" onfocus="this.value=''"><br>
-        <label>Dollar </label><input id="dollar" type="text" placeholder="- $" onfocus="this.value=''"><br>
-        <label>Livre sterling </label><input id="livre" type="text" placeholder="- £" onfocus="this.value=''"><br>
-        <label>Yen </label><input id="yen" type="text" placeholder="- ¥" onfocus="this.value=''"><br>
+      <h1>Convertisseurs de devises</h1>
+      <h2>Version 1</h2>
+      <input
+        type="number"
+        class="montant1"
+        onfocus="this.value=''"
+        autofocus
+      />&nbsp;
+      <select type="checkbox" id="devise1">
+        <option value="euro">Euro</option>
+        <option value="dollar">Dollar</option>
+        <option value="livre">Livre</option>
+        <option value="yen">Yen</option>
+      </select>
+      <br />
+      <button class="altern" onclick="alterner()">&lt;=&gt;</button><br />
+      <input type="number" class="montant2" readonly />&nbsp;
+      <select type="checkbox" id="devise2">
+        <option value="euro">Euro</option>
+        <option value="dollar" selected>Dollar</option>
+        <option value="livre">Livre</option>
+        <option value="yen">Yen</option></select
+      ><br />
+      <button id="convertisseur">Convertir</button>
+      <button onclick="effacer1()">Effacer</button><br />
+      <h2>Version 2</h2>
+      <label>Euro </label
+      ><input
+        id="euro"
+        type="text"
+        placeholder="- €"
+        onfocus="this.value=''"
+      /><br />
+      <label>Dollar </label
+      ><input
+        id="dollar"
+        type="text"
+        placeholder="- $"
+        onfocus="this.value=''"
+      /><br />
+      <label>Livre sterling </label
+      ><input
+        id="livre"
+        type="text"
+        placeholder="- £"
+        onfocus="this.value=''"
+      /><br />
+      <label>Yen </label
+      ><input
+        id="yen"
+        type="text"
+        placeholder="- ¥"
+        onfocus="this.value=''"
+      /><br />
 
-        <button onclick="effacer()">Effacer</button><br>
+      <button onclick="effacer()">Effacer</button><br />
     </main>
     <script src="./assets/js/devises.js"></script>
-</body>
-
+  </body>
 </html>
