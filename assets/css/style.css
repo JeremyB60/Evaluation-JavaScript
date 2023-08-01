@@ -1,8 +1,14 @@
+:root {
+  --couleur-principale: #f5f5dc;
+  --couleur-secondaire: #333333;
+  --couleur-hover: #cfcfc0;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: raleway;
-  background-color: black;
+  background-color: var(--couleur-principale);
 }
 
 @font-face {
@@ -25,9 +31,9 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 20vh;
-  background: linear-gradient(#1e2530, #050b18);
-  border-bottom: 5px solid #ff0037;
-  color: #cf022e;
+  background-color: var(--couleur-principale);
+  border-bottom: 1px solid var(--couleur-secondaire);
+  color: var(--couleur-secondaire);
   font-size: 3em;
   text-align: center;
 }
@@ -37,7 +43,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-  font-weight: bold;
   font-size: 2em;
 }
 
@@ -45,17 +50,17 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px outset #ff0037;
-  color: #ababab;
+  border-bottom: 1px solid var(--couleur-secondaire);
+  color: var(--couleur-secondaire);
   padding: 20px 0;
-  background-color: #1e2530;
+  background-color: var(--couleur-principale);
   text-align: center;
 }
 
 li:hover {
-  background-color: #0c0f15;
+  background-color: var(--couleur-hover);
   transition: 0.5s;
-  color: #ff0037;
+  font-weight: bold;
 }
 
 a {
@@ -92,14 +97,14 @@ a {
 }
 
 #affichedate {
-  color: #cf022e;
+  color: var(--couleur-secondaire);
   text-align: center;
   font-size: 2em;
-  text-shadow: 1px 1px 2px red;
+  text-shadow: 1px 1px 1px var(--couleur-secondaire);
   margin: auto;
   font-family: reveil;
   padding: 50px 0;
-  background-color: #050b18;
+  background-color: var(--couleur-principale);
 }
 
 .pieddepage {
@@ -109,9 +114,9 @@ a {
   text-align: center;
   height: 80px;
   width: 100%;
-  color: #cf022e;
-  background: linear-gradient(#111824, #050b18);
-  border-top: 2px inset rgb(255, 0, 0);
+  color: var(--couleur-secondaire);
+  background-color: var(--couleur-principale);
+  border-top: 1px solid var(--couleur-secondaire);
 }
 
 @media screen and (max-width: 740px) {

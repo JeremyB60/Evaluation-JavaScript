@@ -1,9 +1,16 @@
+:root {
+  --couleur-principale: #f5f5dc;
+  --couleur-secondaire: #333333;
+  --couleur-hover: #cfcfc0;
+  --couleur-diverse: #e0e0c8;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: raleway;
   text-align: center;
-  background-color: #1e2530;
+  background-color: var(--couleur-principale);
 }
 
 @font-face {
@@ -17,11 +24,10 @@
 }
 
 img {
-  background-color: #374357;
   border-radius: 50%;
   width: 30px;
   padding: 20px;
-  border: 3px outset #ff0037;
+  border: 2px solid var(--couleur-secondaire);
 }
 
 .test {
@@ -29,9 +35,8 @@ img {
 }
 
 .test:hover img {
-  box-shadow: inset 100px 100px 0px #cf022e;
-  transition: 2s;
-  border: 3px outset #ababab;
+  box-shadow: inset 100px 100px 0px var(--couleur-hover);
+  transition: 1s;
 }
 
 .menu {
@@ -41,7 +46,7 @@ img {
   list-style-type: none;
   font-weight: bold;
   font-size: 1.5rem;
-  border-bottom: 3px outset #ff0037;
+  border-bottom: 2px solid var(--couleur-secondaire);
 }
 
 .menu li {
@@ -49,16 +54,15 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ababab;
+  color: var(--couleur-secondaire);
   padding: 20px;
-  background-color: #1e2530;
+  background-color: var(--couleur-principale);
   height: 10vh;
 }
 
 li:hover {
-  background-color: #0c0f15;
-  transition: 1.5s;
-  color: #ff0037;
+  background-color: var(--couleur-hover);
+  transition: 1s;
 }
 
 a {
@@ -69,14 +73,14 @@ a {
 /*----------------- MAIN -----------------*/
 
 h1 {
-  margin-top: 50px;
-  color: #cf022e;
+  margin-top: 30px;
+  color: var(--couleur-secondaire);
   font-size: 2rem;
 }
 
 #calculatrice,
 #calculatrice > * {
-  background-color: #707070;
+  background-color: var(--couleur-hover);
 }
 
 #calculatrice {
@@ -97,9 +101,9 @@ h1 {
     "zzero v e e";
   border-radius: 15px;
   animation: parution 3s ease-in-out;
-  margin-top: 50px;
-  color: #ababab;
-  border: 2px solid #ff0037;
+  margin-top: 20px;
+  color: var(--couleur-secondaire);
+  border: 2px solid var(--couleur-secondaire);
 }
 
 button {
@@ -110,23 +114,22 @@ button {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #ababab;
-  background-color: #1e2530;
-  border: 1px solid #770000;
+  color: var(--couleur-secondaire);
+  background-color: var(--couleur-principale);
+  border: 1px solid var(--couleur-secondaire);
   border-radius: 15px;
   font-size: 20px;
-  box-shadow: 0 5px #a70024;
+  box-shadow: 0 5px var(--couleur-secondaire);
   font-weight: bold;
 }
 
 button:hover {
-  background-color: black;
-  color: #cf022e;
+  background-color: var(--couleur-hover);
+  color: var(--couleur-principale);
 }
 
 button:active {
-  background-color: #770000;
-  box-shadow: 0 5px;
+  box-shadow: 0 5px var(--couleur-hover);
   transform: translateY(4px);
 }
 
@@ -134,9 +137,9 @@ button:active {
   grid-area: c;
   width: 100%;
   height: 85%;
-  background-color: black !important;
-  color: #ff0037;
-  border: 3px double #ff0037;
+  background-color: var(--couleur-principale) !important;
+  color: var(--couleur-secondaire);
+  border: 3px double var(--couleur-secondaire);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -148,7 +151,7 @@ button:active {
 }
 
 .foncer {
-  background-color: #0e1725;
+  background-color: var(--couleur-diverse);
 }
 
 .annule {

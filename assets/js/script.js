@@ -3,11 +3,9 @@ const titre2 = "Menu";
 const welcome = "Bienvenue";
 titre.addEventListener("mouseenter", () => {
   titre.innerHTML = welcome;
-  titre.style.color = "#cf022e";
 });
 titre.addEventListener("mouseout", () => {
   titre.textContent = titre2;
-  titre.style.color = "#cf022e";
 });
 
 const affDate = document.getElementById("affichedate");
