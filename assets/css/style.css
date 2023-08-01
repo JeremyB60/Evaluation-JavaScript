@@ -101,7 +101,6 @@ a {
   color: var(--couleur-secondaire);
   text-align: center;
   font-size: 2em;
-  text-shadow: 1px 1px 1px var(--couleur-secondaire);
   margin: auto;
   font-family: reveil;
   padding: 50px 0;
